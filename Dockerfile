@@ -5,10 +5,12 @@ ENV MAPZEN_API_KEY mapzen-XXXX
 ENV MAPBOX_API_KEY mapbox-XXXX
 ENV ALLOWED_HOSTS=*
 
-RUN apt-get update && \
-    apt-get install -y \
+RUN apt-get update 
+
+RUN apt-get install -y \
     libsm6 \
-    libboost-all-dev \
+    libboost-all-dev 
+RUN apt-get install -y \
     libglib2.0-0 \
     libxrender-dev 
 
