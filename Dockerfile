@@ -10,7 +10,9 @@ RUN apt-get update && \
     libsm6 \
     libboost-all-dev \
     libglib2.0-0 \
-    libxrender-dev \
+    libxrender-dev 
+
+RUN apt-get install -y \
     wget \
     curl \
     nginx 
