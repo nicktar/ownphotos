@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-MAINTAINER Hooram Nam <nhooram@gmail.com>
+FROM arm64v8/alpine:3.11.6
+LABEL maintainer="David Hendrix <pa-nick@gmx.de>"
 
 ENV MAPZEN_API_KEY mapzen-XXXX
 ENV MAPBOX_API_KEY mapbox-XXXX
