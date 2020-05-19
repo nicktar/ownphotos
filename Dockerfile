@@ -5,18 +5,16 @@ ENV MAPZEN_API_KEY mapzen-XXXX
 ENV MAPBOX_API_KEY mapbox-XXXX
 ENV ALLOWED_HOSTS=*
 
-RUN apk add libsm6 
-RUN apk add libboost-all-dev 
-RUN apt-get install -y \
+RUN apk add libsm6 \
+    libboost-all-dev \
     libglib2.0-0 \
     libxrender-dev 
 
-RUN apt-get install -y \
+RUN apk add libsm6 \
     wget \
     curl \
-    nginx 
-
-RUN apt-get install -y bzip2
+    nginx \
+    bzip2
 
 
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
